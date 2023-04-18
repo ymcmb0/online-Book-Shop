@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "a45ba8cd-e642-4381-b144-ed69a4a75e4a",
+		"name": "ORDERS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "26743556-a45ba8cd-e642-4381-b144-ed69a4a75e4a"
+	},
+	"item": [
+		{
+			"name": "VIEW ALL ORDERS",
+			"id": "58e5eaa7-e902-4af3-9e0a-3ea7f013bc41",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "34a4eb03-c91c-4472-b260-d26e33291fd7",
+					"name": "VIEW ALL ORDERS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "284"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11c-AZ4X6X0vRid9eSdSJLK9rtL4zp0\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:05:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orders\": [\n        {\n            \"id\": 1,\n            \"orderDate\": \"2023-04-16T00:00:00.000Z\",\n            \"shippingDate\": \"2023-04-20T00:00:00.000Z\",\n            \"totalCost\": 125.99,\n            \"status\": \"pending\",\n            \"createdAt\": \"2023-04-18T06:44:02.000Z\",\n            \"updatedAt\": \"2023-04-18T06:44:02.000Z\"\n        }\n    ],\n    \"pagination\": {\n        \"page\": 1,\n        \"limit\": 10,\n        \"totalOrders\": 1,\n        \"totalPages\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE ORDER",
+			"id": "a0e1a9c4-836d-4261-9430-4339733ac2dc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderDate\": \"2023-04-16\",\r\n  \"shippingDate\": \"2023-04-20\",\r\n  \"totalCost\": 125.99,\r\n  \"status\": \"pending\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/createorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createorder"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "5e0b15c0-8a3f-46a3-8f30-a300e3b4ac3b",
+					"name": "CREATE ORDER",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"orderDate\": \"2023-04-16\",\r\n  \"shippingDate\": \"2023-04-20\",\r\n  \"totalCost\": 125.99,\r\n  \"status\": \"pending\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createorder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createorder"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "205"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cd-1jDIv4BCK3MhvPDS59qp2lmJVlI\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 06:44:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"orderDate\": \"2023-04-16T00:00:00.000Z\",\n    \"shippingDate\": \"2023-04-20T00:00:00.000Z\",\n    \"totalCost\": 125.99,\n    \"status\": \"pending\",\n    \"updatedAt\": \"2023-04-18T06:44:02.303Z\",\n    \"createdAt\": \"2023-04-18T06:44:02.303Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE ORDER",
+			"id": "de5d4fd3-f945-4c6e-b19c-25755b40497c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "968bc744-12ce-4ccd-b247-5d3f0d7cef2b",
+					"name": "DELETE ORDER",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-6vR3NtGw1n4a2/IBs/Km+S3OyyQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:06:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Order deleted successfully"
+				}
+			]
+		},
+		{
+			"name": "MODIFY ORDER",
+			"id": "24e88677-8161-41e9-ad79-feef75d261ca",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderDate\": \"2023-04-16T10:30:00.000Z\",\r\n  \"shippingDate\": \"2023-04-17T10:30:00.000Z\",\r\n  \"totalCost\": 100.99,\r\n  \"status\": \"shipped\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updateorderbyid/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateorderbyid",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e0aa9943-0cf8-42de-af65-4f4ea14f6a12",
+					"name": "MODIFY ORDER",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"orderDate\": \"2023-04-16T10:30:00.000Z\",\r\n  \"shippingDate\": \"2023-04-17T10:30:00.000Z\",\r\n  \"totalCost\": 100.99,\r\n  \"status\": \"shipped\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateorderbyid/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateorderbyid",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "205"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cd-C3yCoUfbWc8CADRTxN9mOs4RNYY\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:11:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"orderDate\": \"2023-04-16T10:30:00.000Z\",\n    \"shippingDate\": \"2023-04-17T10:30:00.000Z\",\n    \"totalCost\": 100.99,\n    \"status\": \"shipped\",\n    \"createdAt\": \"2023-04-18T07:11:10.000Z\",\n    \"updatedAt\": \"2023-04-18T07:11:16.893Z\"\n}"
+				}
+			]
+		}
+	]
+}

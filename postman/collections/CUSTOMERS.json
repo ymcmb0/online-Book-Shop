@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "305fbef6-af03-46c2-99fd-ac349f7f96b1",
+		"name": "CUSTOMERS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "26743556-305fbef6-af03-46c2-99fd-ac349f7f96b1"
+	},
+	"item": [
+		{
+			"name": "VIEW ALL CUSTOMERS",
+			"id": "3c2925ba-680f-4152-8e00-775a6e31698f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "d5ae31e5-52af-466e-8773-1e4c253b6be4",
+					"name": "VIEW ALL CUSTOMERS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "276"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"114-lc+GBFjLl2irO4cdujhMCeYG698\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:23:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"customers\": [\n        {\n            \"id\": 1,\n            \"name\": \"John Doe\",\n            \"email\": \"johndoe@example.com\",\n            \"shippingAddress\": \"123 Main St, Anytown USA\",\n            \"billingInfo\": \"Visa ending in 1234\",\n            \"createdAt\": \"2023-04-18T07:23:32.000Z\",\n            \"updatedAt\": \"2023-04-18T07:23:32.000Z\"\n        }\n    ],\n    \"totalCount\": 1,\n    \"currentPage\": 1,\n    \"pageSize\": 10\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE CUSTOMER",
+			"id": "e8edf888-75a6-418a-8a50-15ec4440853c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"johndoe@example.com\",\r\n  \"shippingAddress\": \"123 Main St, Anytown USA\",\r\n  \"billingInfo\": \"Visa ending in 1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/createcustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createcustomer"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "892a4edc-766d-45d5-9018-8fee4cc9b5c8",
+					"name": "CREATE CUSTOMER",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"johndoe@example.com\",\r\n  \"shippingAddress\": \"123 Main St, Anytown USA\",\r\n  \"billingInfo\": \"Visa ending in 1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createcustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createcustomer"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "215"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d7-FwwZrutXjh79i7tTjAfrZxvKvnI\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:23:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"John Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"shippingAddress\": \"123 Main St, Anytown USA\",\n    \"billingInfo\": \"Visa ending in 1234\",\n    \"updatedAt\": \"2023-04-18T07:23:32.804Z\",\n    \"createdAt\": \"2023-04-18T07:23:32.804Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE CUSTOMER",
+			"id": "059de033-5394-428b-8ff8-b5107a34a5ed",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "4df4f63c-f3a6-443c-8547-174854169a7e",
+					"name": "DELETE CUSTOMER",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:28:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "MODIFY CUSTOMER",
+			"id": "7f617d15-c819-445c-bd5d-d594cc51ba98",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "552c7f85-d3af-4ac5-8b39-0669e59a557c",
+					"name": "MODIFY CUSTOMER",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "216"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d8-iivh37uZGdu/9h8O7S/2TX4pE/Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:30:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"John Jery\",\n    \"email\": \"johndoe@example.com\",\n    \"shippingAddress\": \"123 Main St, Anytown USA\",\n    \"billingInfo\": \"Visa ending in 1234\",\n    \"createdAt\": \"2023-04-18T07:30:15.000Z\",\n    \"updatedAt\": \"2023-04-18T07:30:41.927Z\"\n}"
+				}
+			]
+		}
+	]
+}

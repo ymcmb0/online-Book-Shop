@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "25e15e78-283d-4e14-a7a2-d23f5c93966c",
+		"name": "ORDERITEMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "26743556-25e15e78-283d-4e14-a7a2-d23f5c93966c"
+	},
+	"item": [
+		{
+			"name": "VIEW ALL ORDERITEMS",
+			"id": "bc517e4a-395e-4c1e-9125-fdee94a34dbc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/allorderitems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"allorderitems"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "fbed11e0-ba11-4d33-a956-c38b7f3fa857",
+					"name": "VIEW ALL ORDERITEMS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/allorderitems",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"allorderitems"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "144"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"90-mjNxPwvi6psndRGtCYltCSbrdEQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:19:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"quantity\": 2,\n        \"price\": 10.99,\n        \"createdAt\": \"2023-04-18T07:18:50.000Z\",\n        \"updatedAt\": \"2023-04-18T07:18:50.000Z\",\n        \"bookId\": null,\n        \"orderId\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "CREATE ORDERITEM",
+			"id": "e5e66fac-1791-4700-8127-9e30ac97a451",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "7e898839-1806-421d-9629-a715b3ea88c1",
+					"name": "CREATE ORDERITEM",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "113"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"71-Ihcnht+lzm+mfExEXx6PDCp9y8s\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:18:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"quantity\": 2,\n    \"price\": 10.99,\n    \"updatedAt\": \"2023-04-18T07:18:50.604Z\",\n    \"createdAt\": \"2023-04-18T07:18:50.604Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE ORDERITEM",
+			"id": "c4255610-62cf-4538-bd7e-37ed213578c2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/deleteorderitembyid/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteorderitembyid",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "712497eb-3c62-4676-aaf7-cc1916a57ee1",
+					"name": "DELETE ORDERITEM",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/deleteorderitembyid/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"deleteorderitembyid",
+								"1"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:19:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "MODIFY ORDERITEM",
+			"id": "85f558b0-998c-4d83-b2df-7a46586a9ae5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"quantity\": 5,\r\n  \"price\": 12.99\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updateorderitembyid/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateorderitembyid",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "33b68b6e-9a3f-4970-9ad2-f1bed87e2256",
+					"name": "MODIFY ORDERITEM",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"quantity\": 5,\r\n  \"price\": 12.99\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateorderitembyid/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateorderitembyid",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8e-WWdCrgI6u2dr0d/z9VFhyfTi6lQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:20:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"quantity\": 5,\n    \"price\": 12.99,\n    \"createdAt\": \"2023-04-18T07:19:42.000Z\",\n    \"updatedAt\": \"2023-04-18T07:20:05.063Z\",\n    \"bookId\": null,\n    \"orderId\": null\n}"
+				}
+			]
+		}
+	]
+}

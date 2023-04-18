@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "13a53ee9-17a2-4f52-93be-675d40b674fa",
+		"name": "BOOKS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "26743556-13a53ee9-17a2-4f52-93be-675d40b674fa"
+	},
+	"item": [
+		{
+			"name": "VIEW ALL BOOKS",
+			"id": "21886fe0-6b61-4850-93b7-65a8841817ed",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/allbooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"allbooks"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "70fcec62-4240-4e1a-9ae3-3d6cc574aaaa",
+					"name": "VIEW ALL BOOKS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/allbooks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"allbooks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "329"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"149-8MzKPSfLPgkDt2ZwvE6s/Sq1XQ8\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:33:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"totalItems\": 1,\n    \"books\": [\n        {\n            \"id\": 1,\n            \"title\": \"The Alchemist\",\n            \"author\": \"Paulo Coelho\",\n            \"publisher\": \"HarperCollins\",\n            \"publicationDate\": \"1988-01-01\",\n            \"isbn\": \"978-0062315007\",\n            \"genre\": \"Fiction\",\n            \"price\": 10.99,\n            \"quantityInStock\": 100,\n            \"createdAt\": \"2023-04-18T07:32:58.000Z\",\n            \"updatedAt\": \"2023-04-18T07:32:58.000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE BOOK",
+			"id": "f8c2e84d-a7cf-4143-977f-77adf60776ff",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "5853510a-b8d3-48d7-a8f5-444045cd044e",
+					"name": "CREATE BOOK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "271"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10f-lfC9cMpOsQsfzCbmTfI6BLJ6uNA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:32:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"title\": \"The Alchemist\",\n    \"author\": \"Paulo Coelho\",\n    \"publisher\": \"HarperCollins\",\n    \"publicationDate\": \"1988-01-01\",\n    \"isbn\": \"978-0062315007\",\n    \"genre\": \"Fiction\",\n    \"price\": 10.99,\n    \"quantityInStock\": 100,\n    \"updatedAt\": \"2023-04-18T07:32:58.524Z\",\n    \"createdAt\": \"2023-04-18T07:32:58.524Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE BOOK",
+			"id": "3b204312-b3d9-46cf-910e-9e92c3d56c9b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/deletebookbyid/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletebookbyid",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "9cc95629-8804-4736-9b73-69b7cbb8cf48",
+					"name": "DELETE BOOK",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/deletebookbyid/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"deletebookbyid",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"19-DnVeU5bg5aKIik5UsEeHFBWek1c\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:35:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Book deleted successfully"
+				}
+			]
+		},
+		{
+			"name": "MODIFY BOOK",
+			"id": "6f30277b-b58e-4d77-97c9-ca6d0eb97152",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "a82e087d-5eff-43f0-b054-f1be2dea9095",
+					"name": "MODIFY BOOK",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "271"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10f-ku3ynH7jgaczfNkjfDgLDaQjPzM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:34:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"title\": \"The Alchemist\",\n    \"author\": \"Paulo Coelho\",\n    \"publisher\": \"HarperCollins\",\n    \"publicationDate\": \"1988-01-01\",\n    \"isbn\": \"978-0062315007\",\n    \"genre\": \"Mystery\",\n    \"price\": 10.99,\n    \"quantityInStock\": 100,\n    \"createdAt\": \"2023-04-18T07:32:58.000Z\",\n    \"updatedAt\": \"2023-04-18T07:34:54.896Z\"\n}"
+				}
+			]
+		}
+	]
+}

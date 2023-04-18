@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "a4b299af-d742-4c56-8f41-b3483369fc53",
+		"name": "ADMIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "26743556-a4b299af-d742-4c56-8f41-b3483369fc53"
+	},
+	"item": [
+		{
+			"name": "VIEW ALL ADMINS",
+			"id": "09363e09-b746-493a-a3d0-8360a78593c3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "b556b907-2bd0-4567-9153-8820ccc7fc22",
+					"name": "VIEW ALL ADMINS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "166"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a6-Gv1rBxqs0w8f0MjajYtetZYxyUg\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:42:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Jack\",\n        \"email\": \"jack@example.com\",\n        \"username\": \"jac23\",\n        \"password\": \"pas1\",\n        \"createdAt\": \"2023-04-18T07:41:25.000Z\",\n        \"updatedAt\": \"2023-04-18T07:41:25.000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "CREATE ADMIN",
+			"id": "321ad107-b477-4edc-bae8-46e30de28832",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jack\",\r\n  \"email\": \"jack@example.com\",\r\n  \"username\": \"jac23\",\r\n  \"password\": \"pas1\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/createadmin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createadmin"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "f44a28af-696f-4cea-8885-c5fb1b13bbf0",
+					"name": "CREATE ADMIN",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Jack\",\r\n  \"email\": \"jack@example.com\",\r\n  \"username\": \"jac23\",\r\n  \"password\": \"pas1\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createadmin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createadmin"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "164"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a4-jlpALKDOupSaLXpZC0soIwMKnIU\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:41:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Jack\",\n    \"email\": \"jack@example.com\",\n    \"username\": \"jac23\",\n    \"password\": \"pas1\",\n    \"updatedAt\": \"2023-04-18T07:41:25.134Z\",\n    \"createdAt\": \"2023-04-18T07:41:25.134Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE ADMIN",
+			"id": "a1ceee5c-9c40-4b11-a0f7-25dae66738e7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "00314218-b525-4575-9176-56354e47cc06",
+					"name": "DELETE ADMIN",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-MQzxA0QqEmLj6RcnHiRVhCykQ3o\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:43:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Admin deleted successfully"
+				}
+			]
+		},
+		{
+			"name": "MODIFY ADMIN",
+			"id": "446a214a-e6bb-40f7-9542-35a680207d96",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "b7a4d2ea-556e-45c5-802a-70208a5283a9",
+					"name": "MODIFY ADMIN",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "188"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bc-vWsXTeZ/F48Svp7BVmvwfFrffFY\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:42:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"John Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"username\": \"johndoe123\",\n    \"password\": \"mysecretpassword\",\n    \"createdAt\": \"2023-04-18T07:41:25.000Z\",\n    \"updatedAt\": \"2023-04-18T07:42:49.504Z\"\n}"
+				}
+			]
+		}
+	]
+}

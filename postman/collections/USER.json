@@ -1,0 +1,462 @@
+{
+	"info": {
+		"_postman_id": "8e8beec4-b931-43f3-8499-65d197d5766c",
+		"name": "USER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "26743556-8e8beec4-b931-43f3-8499-65d197d5766c"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"id": "254881cc-8083-4081-9ca5-56915b23d913",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"usman\",\r\n  \"email\": \"usm@goog.com\",\r\n  \"username\": \"usm1\",\r\n  \"password\": \"usm2\",\r\n  \"role\": \"customer\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/createuser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createuser"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "16b680eb-527f-4592-8523-ea3091c6288f",
+					"name": "CreateUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"usman\",\r\n  \"email\": \"usm@goog.com\",\r\n  \"username\": \"usm1\",\r\n  \"password\": \"usm2\",\r\n  \"role\": \"customer\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createuser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createuser"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "296"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"128-1ItlLjlmlT2Qz38XyU1ROR37uPY\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 04:27:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User created successfully\",\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"Emma Smith\",\n        \"email\": \"emma.smith@gmail.com\",\n        \"username\": \"emmasmith\",\n        \"password\": \"$2a$10$HD4mE1IwGVEXNAx9mLYn7uc.sjWIM3SszHqkj7jj.bY9pG8FvM5Ue\",\n        \"role\": \"admin\",\n        \"updatedAt\": \"2023-04-18T04:27:19.115Z\",\n        \"createdAt\": \"2023-04-18T04:27:19.115Z\"\n    }\n}"
+				},
+				{
+					"id": "ef906377-20d4-408d-b632-3452e012dda9",
+					"name": "CreateUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"usman\",\r\n  \"email\": \"usm@goog.com\",\r\n  \"username\": \"usm1\",\r\n  \"password\": \"usm2\",\r\n  \"role\": \"customer\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createuser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createuser"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "282"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11a-4r4JjZRoDenrYeIRYD4RBqCd7oc\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 05:07:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User created successfully\",\n    \"user\": {\n        \"id\": 11,\n        \"name\": \"usman\",\n        \"email\": \"usm@goog.com\",\n        \"username\": \"usm1\",\n        \"password\": \"$2a$10$DGSaX9Z3iHxTkq8c/lWrIOxMVAWUuYisyajgSt4GhLUhlVAbrjFkS\",\n        \"role\": \"customer\",\n        \"updatedAt\": \"2023-04-18T05:07:35.992Z\",\n        \"createdAt\": \"2023-04-18T05:07:35.992Z\"\n    }\n}"
+				},
+				{
+					"id": "e72f31a8-ca70-46df-846d-fee166070e0f",
+					"name": "CreateUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"usman\",\r\n  \"email\": \"usm@goog.com\",\r\n  \"username\": \"usm1\",\r\n  \"password\": \"usm2\",\r\n  \"role\": \"customer\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createuser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createuser"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "280"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"118-eRarEwLOfzZo+DFbH14MAqxCQ50\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:50:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User created successfully\",\n    \"user\": {\n        \"id\": 14,\n        \"name\": \"raf\",\n        \"email\": \"raf@goog.com\",\n        \"username\": \"raf1\",\n        \"password\": \"$2a$10$gXhSnUA4hhTU/x6BCczWPOHxYijWCkwx1BjwkUo4yDA1cVWM2rLm.\",\n        \"role\": \"customer\",\n        \"updatedAt\": \"2023-04-18T07:50:49.743Z\",\n        \"createdAt\": \"2023-04-18T07:50:49.743Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "View All Users",
+			"id": "34b5d2f8-0402-49f5-b8c2-6f2aed651db9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/allusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"allusers"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "72e73cd1-0787-4152-b1cc-888fccd191c4",
+					"name": "View All Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/allusers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"allusers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "781"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"30d-gmIn1Q/KOU9czZmNnBhkPKRjtYk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 07:49:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalItems\": 3,\n    \"users\": [\n        {\n            \"id\": 11,\n            \"name\": \"TASMAN\",\n            \"email\": \"usm@goog.com\",\n            \"username\": \"usm1\",\n            \"password\": \"$2a$10$DGSaX9Z3iHxTkq8c/lWrIOxMVAWUuYisyajgSt4GhLUhlVAbrjFkS\",\n            \"role\": \"customer\",\n            \"createdAt\": \"2023-04-18T05:07:35.000Z\",\n            \"updatedAt\": \"2023-04-18T06:00:52.000Z\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Jahe\",\n            \"email\": \"jay.@example.com\",\n            \"username\": \"jae\",\n            \"password\": \"$2a$10$gimORBlbY8Zv7ql3XC5m4ez.tjjWEO6Iuo.HErvXPzGdfLN5HTD4K\",\n            \"role\": \"customer\",\n            \"createdAt\": \"2023-04-18T04:47:30.000Z\",\n            \"updatedAt\": \"2023-04-18T04:47:30.000Z\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Jane Doe\",\n            \"email\": \"jane.doe@example.com\",\n            \"username\": \"jane.doe\",\n            \"password\": \"$2a$10$2i7Iq3OsYsDOTxuO1H6kzu7PMys6yVdJJ/7.Ji2algDJy250J/tvK\",\n            \"role\": \"customer\",\n            \"createdAt\": \"2023-04-18T04:41:19.000Z\",\n            \"updatedAt\": \"2023-04-18T04:41:19.000Z\"\n        }\n    ],\n    \"currentPage\": 1,\n    \"totalPages\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE USER",
+			"id": "24d079d2-e3d2-4371-9045-f94efd82a558",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "20851f43-9cf4-4cbb-8cf3-a3f87478ddc2",
+					"name": "DELETE USER",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-27o4zzUjhHNmthTJyia4gBCjpos\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 05:59:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "MODIFY USER",
+			"id": "0b9d4593-bd88-489b-997f-4c384ee2fd64",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"id\": 11,\r\n            \"name\": \"TASMAN\",\r\n            \"email\": \"usm@goog.com\",\r\n            \"username\": \"usm1\",\r\n            \"password\": \"$2a$10$DGSaX9Z3iHxTkq8c/lWrIOxMVAWUuYisyajgSt4GhLUhlVAbrjFkS\",\r\n            \"role\": \"customer\",\r\n            \"createdAt\": \"2023-04-18T05:07:35.000Z\",\r\n            \"updatedAt\": \"2023-04-18T05:07:35.000Z\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updateuserbyid/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateuserbyid",
+						"11"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "5552ec4b-f95e-4d9c-9a1c-6622021b0782",
+					"name": "MODIFY USER",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n            \"id\": 11,\r\n            \"name\": \"TASMAN\",\r\n            \"email\": \"usm@goog.com\",\r\n            \"username\": \"usm1\",\r\n            \"password\": \"$2a$10$DGSaX9Z3iHxTkq8c/lWrIOxMVAWUuYisyajgSt4GhLUhlVAbrjFkS\",\r\n            \"role\": \"customer\",\r\n            \"createdAt\": \"2023-04-18T05:07:35.000Z\",\r\n            \"updatedAt\": \"2023-04-18T05:07:35.000Z\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateuserbyid/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateuserbyid",
+								"11"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "283"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11b-Q1BBqJKRTCGU5YJN0YG5xrdW0O4\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 06:00:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User updated successfully\",\n    \"user\": {\n        \"id\": 11,\n        \"name\": \"TASMAN\",\n        \"email\": \"usm@goog.com\",\n        \"username\": \"usm1\",\n        \"password\": \"$2a$10$DGSaX9Z3iHxTkq8c/lWrIOxMVAWUuYisyajgSt4GhLUhlVAbrjFkS\",\n        \"role\": \"customer\",\n        \"createdAt\": \"2023-04-18T05:07:35.000Z\",\n        \"updatedAt\": \"2023-04-18T06:00:52.000Z\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

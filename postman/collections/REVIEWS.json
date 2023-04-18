@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "dd0403c5-a277-452c-ab3b-55fc27ba5ab2",
+		"name": "REVIEWS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "26743556-dd0403c5-a277-452c-ab3b-55fc27ba5ab2"
+	},
+	"item": [
+		{
+			"name": "VIEW ALL REVIEWS",
+			"id": "5a7a86a1-b8a1-42d6-a082-6dccbf6d925e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/allreviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"allreviews"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "6571d547-eb4f-4c1f-b90c-af5e0d003fe8",
+					"name": "VIEW ALL REVIEWS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/allreviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"allreviews"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "223"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"df-4uBAZvf2sLxVP+UU4T2C3eOz6aU\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 06:25:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"reviews\": [\n        {\n            \"id\": 1,\n            \"reviewText\": \"Great product, would highly recommend\",\n            \"rating\": 5,\n            \"createdAt\": \"2023-04-18T06:24:46.000Z\",\n            \"updatedAt\": \"2023-04-18T06:24:46.000Z\",\n            \"bookId\": null\n        }\n    ],\n    \"totalCount\": 1,\n    \"currentPage\": 1,\n    \"pageSize\": 10\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE REVIEWS",
+			"id": "6f171b65-209c-49dc-9f6a-861d83b20aa7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"reviewText\": \"Good Book\",\r\n\"rating\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/createreviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createreviews"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "1a611665-4e46-4733-9249-9fd2837cb590",
+					"name": "CREATE REVIEWS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"reviewText\": \"Good Book\",\r\n\"rating\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createreviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createreviews"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-VwR3UpO+RIsY+YA6X6iFtodPCh0\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 06:24:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"reviewText\": \"Great product, would highly recommend\",\n    \"rating\": 5,\n    \"updatedAt\": \"2023-04-18T06:24:46.461Z\",\n    \"createdAt\": \"2023-04-18T06:24:46.461Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE REVIEWS",
+			"id": "27156fb7-5b9c-40af-941b-f12c07f867ee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/deletereviewbyid/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletereviewbyid",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "ba6f37bb-8f02-43df-baa4-d4713966eb0b",
+					"name": "DELETE REVIEWS",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/deletereviewbyid/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"deletereviewbyid",
+								"2"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 06:25:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "MODIFY REVIEWS",
+			"id": "f1b9b58a-2a79-404a-8811-4e19ba07764e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"reviewText\": \"Amazing Boook\",\r\n\"rating\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updatereviewbyid/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatereviewbyid",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "09de4f30-e363-4673-904e-2e132c053860",
+					"name": "MODIFY REVIEWS",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"reviewText\": \"Amazing Boook\",\r\n\"rating\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updatereviewbyid/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updatereviewbyid",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "140"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8c-zUeb2x1F0qCfb8NL4A7jyc/rpb0\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Apr 2023 06:26:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"reviewText\": \"Amazing Boook\",\n    \"rating\": 5,\n    \"createdAt\": \"2023-04-18T06:24:46.000Z\",\n    \"updatedAt\": \"2023-04-18T06:26:47.082Z\",\n    \"bookId\": null\n}"
+				}
+			]
+		}
+	]
+}
